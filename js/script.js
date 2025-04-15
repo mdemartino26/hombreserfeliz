@@ -85,3 +85,12 @@ function mostrarPopupTriste() {
     const popup = document.getElementById("popupTriste");
     popup.classList.remove("oculto");
   }
+
+  function reiniciarJuego() {
+    puntos = 0;
+    indice = 0;
+    erroresSeguidos = 0;
+    document.getElementById("puntos").textContent = "Puntos: 0";
+    document.getElementById("popupTriste").classList.add("oculto");
+    mostrarPregunta();
+  }
